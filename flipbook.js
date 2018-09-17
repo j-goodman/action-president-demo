@@ -65,34 +65,14 @@ let height = (panel, canvas) => {
 
 let panels = [
     new Panel ({
-        name: 'color-tower',
-        imageSource: 'images/towerpan-color.png',
-        frames: 29,
-    }),
-    new Panel ({
-        name: 'title',
-        imageSource: 'images/title.png',
-        frames: 18,
-    }),
-    new Panel ({
-        name: 'submersible',
-        imageSource: 'images/submersible.png',
-        frames: 16,
+        name: 'panel-one.png',
+        imageSource: 'images/panel-one.png',
+        frames: 35,
     }),
     new Panel ({
       name: 'space-jump',
       imageSource: 'images/space-jump.png',
       frames: 36,
-    }),
-    new Panel ({
-        name: 'towerpan',
-        imageSource: 'images/towerpan-2.png',
-        frames: 25,
-    }),
-    new Panel ({
-        name: 'anchor',
-        imageSource: 'images/deeps-demo-color.png',
-        frames: 7,
     }),
 ]
 
