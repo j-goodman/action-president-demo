@@ -39,9 +39,14 @@ let drawPanels = () => {
         if (objectiveScroll > anchor && objectiveScroll < anchor + slide) {
             objectiveScroll = anchor
             // Set the current frame based on scroll position
-            panel.frame = Math.floor(
+            let targetFrame = Math.floor(
                 (window.scrollY - anchor) / (slide) * panel.frames - totalFrames
             )
+            if (Math.abs(targetFrame - panel.frame) <= 1) {
+                panel.frame = targetFrame
+            } else {
+                panel.frame += targetFrame < panel.frame ? -1 : 1;
+            }
         } else if (objectiveScroll > anchor + slide) {
             objectiveScroll -= slide
         }
@@ -81,6 +86,8 @@ let panels = [
     }),
 ]
 
+window.setInterval(drawPanels, 30)
+
 window.addEventListener('load', setupCanvas)
-window.addEventListener('scroll', drawPanels)
+// window.addEventListener('scroll', drawPanels)
 window.addEventListener('resize', resizeEvent)
