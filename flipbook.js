@@ -72,7 +72,7 @@ let panels = [
     new Panel ({
       name: 'panel-two.png',
       imageSource: 'images/panel-two.png',
-      frames: 18,
+      frames: 27,
     }),
     new Panel ({
       name: 'space-jump',
