@@ -42,6 +42,11 @@ let drawPanels = () => {
             let targetFrame = Math.floor(
                 (window.scrollY - anchor) / (slide) * panel.frames - totalFrames
             )
+            if (window.scrollY > anchor + slide * panel.frames) {
+                targetFrame = panel.frames
+            } else if (window.scrollY < anchor) {
+                targetFrame = 0
+            }
             if (Math.abs(targetFrame - panel.frame) <= 1) {
                 panel.frame = targetFrame
             } else {
@@ -87,7 +92,7 @@ let panels = [
     new Panel ({
       name: 'color-one',
       imageSource: 'images/color-one.png',
-      frames: 25,
+      frames: 34,
     }),
 ]
 
