@@ -42,11 +42,6 @@ let drawPanels = () => {
             let targetFrame = Math.floor(
                 (window.scrollY - anchor) / (slide) * panel.frames - totalFrames
             )
-            if (window.scrollY > anchor + slide * panel.frames) {
-                targetFrame = panel.frames
-            } else if (window.scrollY < anchor) {
-                targetFrame = 0
-            }
             if (Math.abs(targetFrame - panel.frame) <= 1) {
                 panel.frame = targetFrame
             } else {
@@ -75,9 +70,9 @@ let height = (panel, canvas) => {
 
 let panels = [
     new Panel ({
-        name: 'panel-one.png',
-        imageSource: 'images/panel-one.png',
-        frames: 38,
+      name: 'color-one',
+      imageSource: 'images/color-one.png',
+      frames: 38,
     }),
     new Panel ({
       name: 'panel-two.png',
@@ -88,11 +83,6 @@ let panels = [
       name: 'space-jump',
       imageSource: 'images/space-jump.png',
       frames: 36,
-    }),
-    new Panel ({
-      name: 'color-one',
-      imageSource: 'images/color-one.png',
-      frames: 34,
     }),
 ]
 
