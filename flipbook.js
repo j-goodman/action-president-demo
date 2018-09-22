@@ -42,6 +42,7 @@ let drawPanels = () => {
             let targetFrame = Math.floor(
                 (window.scrollY - anchor) / (slide) * panel.frames - totalFrames
             )
+
             if (Math.abs(targetFrame - panel.frame) <= 1) {
                 panel.frame = targetFrame
             } else {
@@ -50,6 +51,7 @@ let drawPanels = () => {
         } else if (objectiveScroll > anchor + slide) {
             objectiveScroll -= slide
         }
+
         totalFrames += panel.frames
         let scrollOffset = anchor - objectiveScroll
         let frameOffset = panel.frame * canvas.width
@@ -75,8 +77,8 @@ let panels = [
       frames: 38,
     }),
     new Panel ({
-      name: 'panel-two.png',
-      imageSource: 'images/panel-two.png',
+      name: 'color-two',
+      imageSource: 'images/color-two.png',
       frames: 27,
     }),
     new Panel ({
