@@ -36,6 +36,7 @@ let drawPanels = () => {
         anchor = totalAnchor
         totalAnchor += height(panel, canvas)
         let slide = panel.frames * frameRate
+
         if (objectiveScroll > anchor && objectiveScroll < anchor + slide) {
             objectiveScroll = anchor
             // Set the current frame based on scroll position
@@ -55,6 +56,10 @@ let drawPanels = () => {
         totalFrames += panel.frames
         let scrollOffset = anchor - objectiveScroll
         let frameOffset = panel.frame * canvas.width
+
+        if (scrollOffset > 0) {
+            panel.frame = 0
+        }
         ctx.drawImage(
             panel.image,
             0 - frameOffset,
