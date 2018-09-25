@@ -91,6 +91,11 @@ let panels = [
       imageSource: 'images/space-jump.png',
       frames: 36,
     }),
+    new Panel ({
+      name: 'color-three',
+      imageSource: 'images/color-three.png',
+      frames: 7,
+    }),
 ]
 
 window.setInterval(drawPanels, 30)
