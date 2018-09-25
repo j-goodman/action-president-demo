@@ -84,17 +84,17 @@ let panels = [
     new Panel ({
       name: 'color-two',
       imageSource: 'images/color-two.png',
-      frames: 27,
+      frames: 25,
+    }),
+    new Panel ({
+      name: 'color-three',
+      imageSource: 'images/color-three.png',
+      frames: 10,
     }),
     new Panel ({
       name: 'space-jump',
       imageSource: 'images/space-jump.png',
       frames: 36,
-    }),
-    new Panel ({
-      name: 'color-three',
-      imageSource: 'images/color-three.png',
-      frames: 7,
     }),
 ]
 
