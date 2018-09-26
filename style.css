@@ -17,3 +17,10 @@ body {
     background: #000;
     height: 20000px;
 }
+
+#loader-note {
+    color: #fff;
+    font-family: monospace;
+    margin-top: 80px;
+    text-align: center;
+}

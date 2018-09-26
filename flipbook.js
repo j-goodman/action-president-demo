@@ -7,6 +7,7 @@ let setupCanvas = () => {
     canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
     resizeEvent()
+    document.getElementById('loader-note').innerText = ''
 }
 
 let resizeEvent = () => {
