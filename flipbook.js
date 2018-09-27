@@ -93,8 +93,8 @@ let panels = [
       frames: 30,
     }),
     new Panel ({
-      name: '4-A-demo',
-      imageSource: 'images/4-A-demo.png',
+      name: 'color-four-a',
+      imageSource: 'images/color-four-a.png',
       frames: 24,
     }),
 ]
