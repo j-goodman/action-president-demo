@@ -90,17 +90,15 @@ let panels = [
     new Panel ({
       name: 'color-three',
       imageSource: 'images/color-three.png',
-      frames: 36,
+      frames: 37,
     }),
     new Panel ({
       name: 'color-four',
       imageSource: 'images/color-four.png',
-      frames: 40,
+      frames: 41,
     }),
 ]
 
 window.setInterval(drawPanels, 30)
-
 window.addEventListener('load', setupCanvas)
-// window.addEventListener('scroll', drawPanels)
 window.addEventListener('resize', resizeEvent)
