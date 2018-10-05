@@ -95,12 +95,20 @@ let panels = [
     new Panel ({
       name: 'four-a',
       imageSource: 'images/four-a.png',
+<<<<<<< HEAD
       frames: 24,
+=======
+      frames: 35,
+>>>>>>> cc3248c1e62f6e5e032853fd6e85349722c478b9
     }),
     new Panel ({
       name: 'four-b',
       imageSource: 'images/four-b.png',
+<<<<<<< HEAD
       frames: 30,
+=======
+      frames: 35,
+>>>>>>> cc3248c1e62f6e5e032853fd6e85349722c478b9
     }),
 ]
 
