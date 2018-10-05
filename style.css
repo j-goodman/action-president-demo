@@ -15,12 +15,13 @@ canvas {
 
 body {
     background: #000;
-    height: 25000px;
+    height: 32000px;
 }
 
 #loader-note {
     color: #fff;
     font-family: monospace;
+    font-size: 3em;
     margin-top: 80px;
     text-align: center;
 }
