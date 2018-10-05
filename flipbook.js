@@ -93,9 +93,9 @@ let panels = [
       frames: 38,
     }),
     new Panel ({
-      name: 'color-four',
-      imageSource: 'images/color-four.png',
-      frames: 34,
+      name: 'four-a',
+      imageSource: 'images/four-a.png',
+      frames: 45,
     }),
 ]
 
