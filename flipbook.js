@@ -125,6 +125,11 @@ let panels = [
       imageSource: 'images/color-seven.png',
       frames: 34
     }),
+    new Panel ({
+      name: 'color-eight',
+      imageSource: 'images/color-eight.png',
+      frames: 11
+    }),
 ]
 
 window.setInterval(drawPanels, 30)
