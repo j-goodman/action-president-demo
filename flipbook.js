@@ -133,7 +133,7 @@ let panels = [
     new Panel ({
       name: 'color-eight',
       imageSource: 'images/color-eight.png',
-      frames: 21
+      frames: 27
     }),
 ]
 
