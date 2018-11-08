@@ -8,7 +8,7 @@ canvas {
 
 @media (min-aspect-ratio: 1/1) {
     canvas {
-        width: 36%;
+        width: 33%;
         margin-left: 25%;
     }
 }
