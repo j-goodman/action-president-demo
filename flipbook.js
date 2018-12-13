@@ -6,6 +6,7 @@ let setupCanvas = () => {
     // Assign canvas variables, set canvas size, and draw panels
     canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
+    window.scrollTo(0, 0)
     resizeEvent()
     document.getElementById('loader-note').innerText = ''
 }
