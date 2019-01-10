@@ -154,7 +154,7 @@ let panels = [
     new Panel ({
       name: 'end',
       imageSource: 'images/end.png',
-      frames: 1
+      frames: 5
     }),
 ]
 
